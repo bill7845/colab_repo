@@ -19,4 +19,6 @@
   * hour_bef_pm10 : 한 시간 전 미세먼지 농도
   * hour_bef_pm2.5 : 한 시간 전 초미세먼지 농도
   * hour_bef_count : 한 시간 전 대여량
+  
+  * 데이터 출처 : https://dacon.io/competitions/open/235576/data/
 <br>
