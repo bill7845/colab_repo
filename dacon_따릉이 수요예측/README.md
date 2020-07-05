@@ -29,7 +29,7 @@
 1. 데이터 체크
  * 데이터 모양
  
- ![info_편집](https://user-images.githubusercontent.com/35517797/86532523-af98f480-bf05-11ea-92c8-7c39a17a8f0e.PNG)
+ ![info_편집](https://user-images.githubusercontent.com/35517797/86532563-fb4b9e00-bf05-11ea-8702-fdfd62f283a1.PNG)
 
 
 
