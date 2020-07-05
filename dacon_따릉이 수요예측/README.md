@@ -26,7 +26,16 @@
 
 #### < EDA 및 결측치,이상치 처리 과정 >
 
+1. 데이터 체크
+ * ![데이터 체크](https://user-images.githubusercontent.com/35517797/86532443-fafed300-bf04-11ea-97f1-566ce91c8327.PNG)
 
+2. 결측치 확인
+
+3. Target 분포
+
+4. 시간대 분포
+
+5. Target / Feature 상관관계
 
 
 
