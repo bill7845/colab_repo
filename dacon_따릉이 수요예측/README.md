@@ -2,12 +2,12 @@
 
 <br>
 
-#### < 모델링 목적 >
+### < 모델링 목적 >
 * 주어진 데이터(2017년 4월 1일부터, 5월 31일까지 시간별로 서울시 따릉이 대여수와 기상상황 데이터)를 바탕으로 1시간 후의 따릉이 대여수 예측
 
 <br>
 
-#### < 데이터 명세 >
+### < 데이터 명세 >
   * id : 고유 아이디
   * hour : 시간
   * hour_bef_temperature : 한 시간 전 온도
@@ -24,7 +24,7 @@
   
 <br>
 
-#### < EDA 및 결측치,이상치 처리 과정 >
+### < EDA 및 결측치,이상치 처리 과정 >
 
 1. 데이터 체크 
     * 학습데이터 shape 1459 x 11 
@@ -69,5 +69,16 @@
  * 각 시간대별 대여횟수가 IQR을 벗어나는 데이터를 이상치로 간주하고 제거함.
 ![이상치_편집](https://user-images.githubusercontent.com/35517797/86534376-06f19180-bf13-11ea-8786-7a9b79e4913d.PNG)
 
+<br>
 
+### 모델링 , 평가
+
+* 총 7가지 회귀 모델 사용
+ * `LinearRegression` , `Ridge` , `Lasso` , `ElasticNet` , `RandomForestRegressor` , `XGBRegressor` , `LGBMRegressor`
+* RMSE를 평가지표로 함.
+* 각 결측치 대체, 이상치 대체법을 적용/비적용하여 GridSearch로 최적 파라미터 서치 및 학습.
+* 가장 높은 성능을 보인 RandomForestRegressor를 최종 모델로 선택.
+![랜프_디프_편집](https://user-images.githubusercontent.com/35517797/86535572-41136100-bf1c-11ea-9bf0-eabe12640de7.PNG)
+![랜프_시각화_편집](https://user-images.githubusercontent.com/35517797/86535574-45d81500-bf1c-11ea-9abc-aabc4d25a11e.PNG)
+![최종순위_편집](https://user-images.githubusercontent.com/35517797/86535575-483a6f00-bf1c-11ea-9149-d296bb2160b0.PNG)
 
