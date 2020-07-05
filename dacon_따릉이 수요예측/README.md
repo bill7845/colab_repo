@@ -19,4 +19,9 @@
   * hour_bef_count : 한 시간 전 대여량
   
   * 데이터 출처 : https://dacon.io/competitions/open/235576/data/
+  
 <br>
+
+#### EDA 및 결측치,이상치 처리 과정
+
+
